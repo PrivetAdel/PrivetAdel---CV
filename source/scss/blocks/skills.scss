@@ -1,0 +1,39 @@
+.section-skills {
+  background-color: $color-black;
+  padding: 7% 0 3%;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 50px;
+
+  &__title {
+    margin: 0 0 20px 20px;
+  }
+
+  &__wrap {
+    padding: 10px;
+  }
+
+  span {
+    margin: 10px;
+    padding: 5px;
+    background-color: $color-black;
+    border-radius: 7px;
+
+    &:hover {
+      background: $color-gradient-pink;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 25px;
+  }
+
+  @media (max-width: $screen-s) {
+    font-size: 22px;
+    line-height: 44px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 30% 0 3%;
+  }
+}

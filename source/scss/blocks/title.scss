@@ -1,0 +1,90 @@
+.section-title {
+  background-color: $color-black;
+  padding: 15% 0 3%;
+
+  &__avatar {
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 40px auto;
+    width: 60%;
+  }
+
+  &__container {
+    position: relative;
+    height: 125px;
+    width: 125px;
+    margin: 0 auto 30px;
+  }
+
+  &__img {
+    position: absolute;
+    overflow: hidden;
+    
+    img {
+      display: block;
+      vertical-align: middle;
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .slider {
+    position: absolute;
+    z-index: 2;
+    cursor: ew-resize;
+    width: 20px;
+    height: 20px;
+    background-color: $color-lite-grey;
+    opacity: 0.7;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $color-pink;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: $screen-ld) {
+    &__text {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    &__text {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &__text {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    &__text {
+      font-size: 23px;
+      line-height: 38px;
+      margin: 10px auto;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    min-height: 100vh;
+    padding: 50% 0 0;
+
+    &__text {
+      font-size: 23px;
+    }
+  }
+}
