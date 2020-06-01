@@ -7,11 +7,17 @@ let currentSlide = 0;
 certificates.classList.remove(`section-certificates__wrap--nojs`);
 
 function nextSlide() {
-  goToSlide(currentSlide + 1);
+  slides[currentSlide].style.animation = `fade 0.6s 1`;
+  setTimeout(() => {
+    goToSlide(currentSlide + 1);
+  }, 700);
 }
 
 function previousSlide() {
-  goToSlide(currentSlide - 1);
+  slides[currentSlide].style.animation = `fade 0.6s 1`;
+  setTimeout(() => {
+    goToSlide(currentSlide - 1);
+  }, 700);
 }
 
 function goToSlide(n) {
