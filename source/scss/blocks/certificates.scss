@@ -15,6 +15,7 @@
   &__certificate {
     width: 28%;
     margin: 20px;
+    transition: all .6s;
   }
 
   &__title {
@@ -96,4 +97,10 @@
       min-height: 80vh;
     }
   }
+}
+
+@keyframes fade {
+  0% { opacity: 1 }
+  50% { opacity: 0.5 }
+  100% { opacity: 0}
 }

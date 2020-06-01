@@ -1,5 +1,6 @@
 .section-title {
   background-color: $color-black;
+  min-height: 100vh;
   padding: 15% 0 3%;
 
   &__avatar {
@@ -26,7 +27,7 @@
   &__img {
     position: absolute;
     overflow: hidden;
-    
+
     img {
       display: block;
       vertical-align: middle;
