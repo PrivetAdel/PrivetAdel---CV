@@ -1,26 +1,12 @@
-const sectionTopBar = document.querySelector(`.section-top-bar`);
-const navMain = sectionTopBar.querySelector(`.section-top-bar__nav`);
-const navToggle = sectionTopBar.querySelector(`.section-top-bar__nav--toggle`);
-const navLinks = sectionTopBar.querySelectorAll(`.site-list__link`);
+'use strict';
 
-sectionTopBar.classList.remove(`section-top-bar__nojs`);
-navMainClose();
+const nav = document.querySelector(`.top-bar`);
+const toggle = nav.querySelector(`.top-bar__toggle`);
 
-function navMainClose() {
-  navMain.classList.remove(`section-top-bar__nav--opened`);
-  navMain.classList.add(`section-top-bar__nav--closed`);
+nav.classList.remove(`top-bar__nojs`);
+
+function onToggleClick() {
+  nav.classList.toggle(`top-bar__opened`);
 }
 
-function navMainOpen() {
-  navMain.classList.remove(`section-top-bar__nav--closed`);
-  navMain.classList.add(`section-top-bar__nav--opened`);
-}
-
-navToggle.addEventListener(`click`, function() {
-  if (navMain.classList.contains(`section-top-bar__nav--closed`)) {
-    navMainOpen();
-    navLinks.forEach(navLink => navLink.addEventListener(`click`, navMainClose));
-  } else {
-    navMainClose();
-  }
-});
+toggle.addEventListener(`click`, onToggleClick);

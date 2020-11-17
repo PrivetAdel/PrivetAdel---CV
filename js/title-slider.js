@@ -1,5 +1,7 @@
+'use strict';
+
 function titleSlider() {
-  const overlay = document.querySelector(`.section-title__img--overlay`);
+  const overlay = document.querySelector(`.title__img--overlay`);
   changeImages(overlay);
 
   function changeImages(img) {
@@ -18,8 +20,8 @@ function titleSlider() {
     slider.addEventListener(`touchstart`, slideReady);
     window.addEventListener(`touchstop`, slideFinish);
 
-    function slideReady(e) {
-      e.preventDefault();
+    function slideReady(evt) {
+      evt.preventDefault();
       clicked = 1;
       window.addEventListener(`mousemove`, slideMove);
       window.addEventListener(`touchmove`, slideMove);
@@ -29,21 +31,21 @@ function titleSlider() {
       clicked = 0;
     }
 
-    function slideMove(e) {
+    function slideMove(evt) {
       if (clicked == 0) return false;
-      let cursorXPosition = getCursorPos(e);
+      let cursorXPosition = getCursorPos(evt);
       if (cursorXPosition < 0) cursorXPosition = 0;
       if (cursorXPosition > 125) cursorXPosition = 125;
       slide(cursorXPosition);
     }
 
-    function getCursorPos(e) {
+    function getCursorPos(evt) {
       let x = 0;
-      e = e || window.event;
+      evt = evt || window.event;
       /*get the x positions of the image:*/
       const a = img.getBoundingClientRect();
       /*calculate the cursor`s x coordinate, relative to the image:*/
-      x = e.pageX - a.left;
+      x = evt.pageX - a.left;
       /*consider any page scrolling:*/
       x = x - window.pageXOffset;
       return x;

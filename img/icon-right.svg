@@ -1,6 +1,10 @@
-<svg id="down-bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
-<path fill="#fff" d="M7.495,13.213l12.094-9.592c1.009-0.8,2.487-0.635,3.295,0.386c0.799,1.008,0.635,2.486-0.384,3.289
-	l-9.764,7.745l9.759,7.651c1.02,0.802,1.198,2.271,0.395,3.293c-0.459,0.586-1.149,0.899-1.842,0.899
-	c-0.507,0-1.02-0.168-1.447-0.51L7.503,16.892c-0.56-0.443-0.894-1.119-0.896-1.837C6.607,14.338,6.936,13.656,7.495,13.213z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="19px" height="30.5px" viewBox="0 0 19 30.5" enable-background="new 0 0 19 30.5" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M15.975,0.24l2.058,2.059l-6.988,6.99c-3.085,3.084-4.886,4.887-5.982,5.939l12.972,12.973l-2.059,2.059
+		L0.967,15.25L15.975,0.24z"/>
+</g>
 </svg>
