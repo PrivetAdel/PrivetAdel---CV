@@ -8,217 +8,281 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <script async src=js/picturefill.js></script>
 </head>
 <body>
+
   <h1 class="visually-hidden">CV Rizvanova Adel</h1>
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
+
   <header>
-    <section class="section-outer section-top-bar section-top-bar__nojs">
+    <section class="section-outer top-bar top-bar__nojs">
       <div class="section-inner">
-        <div class="section-top-bar__pic">
-          <object class="section-top-bar__heart" data="img/logo-heart.svg" width="30" height="30"></object>
+        <div class="top-bar__pic">
+          <img class="top-bar__heart" src="img/logo-heart.svg" width="30" height="30" />
         </div>
-        <nav class="section-top-bar__nav section-top-bar__nav--opened">
-          <button class="section-top-bar__nav--toggle" type="button"><span class="visually-hidden">Open menu</span></button>
-          <ul class="section-top-bar__nav--list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Home</a>
+        <nav class="top-bar__nav">
+          <button class="top-bar__toggle" type="button">
+            <span class="visually-hidden">Open menu</span>
+            <span class="top-bar__btn"></span>
+          </button>
+          <ul class="top-bar__list">
+            <li class="top-bar__item">
+              <a class="top-bar__link" href="#">Home</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#projects">Projects</a>
+            <li class="top-bar__item">
+              <a class="top-bar__link" href="#projects">Projects</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#skills">Skills</a>
+            <li class="top-bar__item">
+              <a class="top-bar__link" href="#skills">Skills</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#certificates">Certificates</a>
+            <li class="top-bar__item">
+              <a class="top-bar__link" href="#certificates">Certificates</a>
             </li>
           </ul>
         </nav>
       </div>
     </section>
   </header>
+
   <main>
-    <section class="section-outer section-title">
+    <section class="section-outer title">
       <div class="section-inner">
-        <div class="section-title__avatar">
-          <div class="section-title__container">
-            <div class="section-title__img">
+        <div class="title__container">
+          <div class="title__avatar">
+            <div class="title__img">
               <img class="avatar" src="img/avatar.jpg" width="125" height="125" alt="avatar">
             </div>
-            <div class="section-title__img section-title__img--overlay">
+            <div class="title__img title__img--overlay">
               <img class="avatar" src="img/avatar-bw.jpg" width="125" height="125" alt="avatar">
             </div>
           </div>
-          <p class="section-title__text">Hi, i'm Adel! And i'm a junior frontend developer from Moscow</p>
+          <p class="title__text">Hi, i'm Adel! And i'm a&nbsp;junior frontend developer from Moscow</p>
         </div>
       </div>
     </section>
-    <section class="section-outer section-portfolio" id="projects">
+
+    <section class="section-outer portfolio" id="projects">
       <div class="section-inner">
         <h2 class="visually-hidden">Latest Projects</h2>
-        <object class="section-portfolio__title" data="img/title-latest-projects.svg" width="294" height="45"></object>
-        <div class="section-portfolio__cards">
-          <div class="section-portfolio__card">
-            <a class="section-portfolio__link" href="https://privetadel.github.io/Bicycle/" target="_blank">
-              <img class="section-portfolio__pic" src="img/bicycle.jpg" alt="bicycle">
+        <img class="portfolio__title" src="img/title-latest-projects.svg" width="294" height="45" />
+        <div class="portfolio__cards">
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://gallery-dbb59.web.app/" target="_blank">
+              <img class="portfolio__pic" src="img/photo-gallery.jpg" alt="photo-gallery">
+              <div class="portfolio__desription">
+                <h3>Photo Gallery on React</h3>
+                <p>&#8226; React App, JSX</p>
+                <p>&#8226; Adaptive: 320px, 768px, 1200px</p>
+                <p>&#8226; Firebase, Masonry, Framer Motion</p>
+                <p>&#8226; Chrome, Opera, Firefox, Safari, Edge</p>
+              </div>
             </a>
-            <div class="section-portfolio__desription">
-              <h3>Bicycle</h3>
-              <p>HTML5, CSS3, JS, GULP, GRID, BEM, SASS</p>
-            </div>
           </div>
-          <div class="section-portfolio__card">
-            <a class="section-portfolio__link" href="https://privetadel.github.io/Web-Development-Project/" target="_blank">
-              <img class="section-portfolio__pic" src="img/web-development-project.jpg" alt="web-development-project">
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://privetadel.github.io/Bicycle/" target="_blank">
+              <img class="portfolio__pic" src="img/bicycle.jpg" alt="bicycle">
+              <div class="portfolio__desription">
+                <h3>Bicycle</h3>
+                <p>&#8226; HTML5, CSS3, Grid, BEM</p>
+                <p>&#8226; GULP, SCSS</p>
+                <p>&#8226; Adaptive: 320px, 568px, 768px, 1024px</p>
+                <p>&#8226; svg-sprite</p>
+                <p>&#8226; Chrome, Opera, Firefox, Safari, Edge</p>
+                <p>&#8226; JavaScript: slider</p>
+              </div>
             </a>
-            <div class="section-portfolio__desription">
-              <h3>Web development project</h3>
-              <p>HTML5, CSS3, JS, GULP, BEM, SASS</p>
-            </div>
           </div>
-          <div class="section-portfolio__card">
-            <a class="section-portfolio__link" href="https://privetadel.github.io/JavaScript30/" target="_blank">
-              <img class="section-portfolio__pic" src="img/java-script-30.jpg" alt="java-script-30">
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://privetadel.github.io/Web-Development-Project/" target="_blank">
+              <img class="portfolio__pic" src="img/web-development-project.jpg" alt="web-development-project">
+              <div class="portfolio__desription">
+                <h3>Web development project</h3>
+                <p>&#8226; HTML5, CSS3, Flexbox, BEM</p>
+                <p>&#8226; GULP, SCSS</p>
+                <p>&#8226; Adaptive: 320px, 568px, 768px, 1200px</p>
+                <p>&#8226; WebP, svg-sprite, svg-animation</p>
+                <p>&#8226; Chrome, Opera, Firefox, Safari, Edge</p>
+                <p>&#8226; JavaScript: menu, pop-up, sliders, scroll</p>
+              </div>
             </a>
-            <div class="section-portfolio__desription">
-              <h3>JavaScript 30</h3>
-              <p>JS, HTML5, CSS3</p>
-            </div>
           </div>
-          <div class="section-portfolio__card">
-            <a class="section-portfolio__link" href="https://privetadel.github.io/KeksoBooking/" target="_blank">
-              <img class="section-portfolio__pic" src="img/keksobooking.jpg" alt="keksobooking">
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://privetadel.github.io/JavaScript30/" target="_blank">
+              <img class="portfolio__pic" src="img/java-script-30.jpg" alt="java-script-30">
+              <div class="portfolio__desription">
+                <h3>JavaScript 30</h3>
+                <p>&#8226; Vanilla JavaScript ES6</p>
+                <p>&#8226; HTML5, CSS3</p>
+                <p>&#8226; Adaptive: 320px, 550px, 1024px</p>
+                <p>&#8226; Chrome, Opera, Firefox, Safari, Edge</p>
+              </div>
             </a>
-            <div class="section-portfolio__desription">
-              <h3>Keksobooking (HTML Academy project)</h3>
-              <p>JS, HTML5, CSS3</p>
-            </div>
           </div>
-          <div class="section-portfolio__card">
-            <a class="section-portfolio__link" href="https://privetadel.github.io/CatEnergy/" target="_blank">
-              <img class="section-portfolio__pic" src="img/cat-energy.jpg" alt="cat-energy">
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://privetadel.github.io/KeksoBooking/" target="_blank">
+              <img class="portfolio__pic" src="img/keksobooking.jpg" alt="keksobooking">
+              <div class="portfolio__desription">
+                <h3>Keksobooking (HTML Academy project)</h3>
+                <p>&#8226; JavaScript ES5</p>
+                <p>&#8226; Ajax</p>
+                <p>&#8226; Form Validation</p>
+                <p>&#8226; Static: 1200px</p>
+              </div>
             </a>
-            <div class="section-portfolio__desription">
-              <h3>Cat Energy (HTML Academy project)</h3>
-              <p>HTML5, CSS3, JS, GULP, BEM, LESS</p>
-            </div>
           </div>
-          <div class="section-portfolio__card">
-            <a class="section-portfolio__link" href="https://privetadel.github.io/Mishka/" target="_blank">
-              <img class="section-portfolio__pic" src="img/mishka.jpg" alt="mishka">
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://privetadel.github.io/CatEnergy/" target="_blank">
+              <img class="portfolio__pic" src="img/cat-energy.jpg" alt="cat-energy">
+              <div class="portfolio__desription">
+                <h3>Cat Energy (HTML Academy project)</h3>
+                <p>&#8226; HTML5, CSS3, Flexbox, BEM</p>
+                <p>&#8226; GULP, LESS</p>
+                <p>&#8226; Pixel Perfect, Mobile First</p>
+                <p>&#8226; Adaptive: 320px, 768px, 1300px</p>
+                <p>&#8226; WebP, svg-sprite</p>
+                <p>&#8226; Chrome, Opera, Firefox, Safari, Edge, IE11</p>
+                <p>&#8226; JavaScript: menu, slider</p>
+              </div>
             </a>
-            <div class="section-portfolio__desription">
-              <h3>Mishka (HTML Academy project)</h3>
-              <p>HTML5, CSS3, JS, GULP, BEM, SASS</p>
-            </div>
           </div>
-          <div class="section-portfolio__card">
-            <a class="section-portfolio__link" href="https://privetadel.github.io/Sedona19/" target="_blank">
-              <img class="section-portfolio__pic" src="img/sedona.jpg" alt="sedona">
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://privetadel.github.io/Mishka/" target="_blank">
+              <img class="portfolio__pic" src="img/mishka.jpg" alt="mishka">
+              <div class="portfolio__desription">
+                <h3>Mishka (HTML Academy project)</h3>
+                <p>&#8226; HTML5, CSS3, Flexbox, BEM</p>
+                <p>&#8226; GULP, SCSS</p>
+                <p>&#8226; Mobile First</p>
+                <p>&#8226; Adaptive: 320px, 768px, 1150px</p>
+                <p>&#8226; WebP, svg-sprite</p>
+                <p>&#8226; Chrome, Opera, Firefox, Safari, Edge</p>
+                <p>&#8226; JavaScript: menu, pop-up, slider</p>
+              </div>
             </a>
-            <div class="section-portfolio__desription">
-              <h3>Sedona (HTML Academy project)</h3>
-              <p>HTML5, CSS3, JS, GULP, BEM, LESS</p>
-            </div>
           </div>
-          <div class="section-portfolio__card">
-            <div class="section-portfolio__desription">
-              <h3></h3>
-              <p></p>
-            </div>
+          <div class="portfolio__card">
+            <a class="portfolio__link" href="https://privetadel.github.io/Sedona19/" target="_blank">
+              <img class="portfolio__pic" src="img/sedona.jpg" alt="sedona">
+              <div class="portfolio__desription">
+                <h3>Sedona (HTML Academy project)</h3>
+                <p>&#8226; HTML5, CSS3, Flexbox, BEM</p>
+                <p>&#8226; GULP, LESS</p>
+                <p>&#8226; Pixel Perfect, Mobile First</p>
+                <p>&#8226; Adaptive: 320px, 768px, 1200px</p>
+                <p>&#8226; WebP, svg-sprite</p>
+                <p>&#8226; Chrome, Opera, Firefox, Safari, Edge, IE11</p>
+                <p>&#8226; JavaScript: menu, pop-up</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-outer section-skills" id="skills">
+
+    <section class="section-outer skills" id="skills">
       <div class="section-inner">
         <h2 class="visually-hidden">Skills</h2>
-        <object class="section-skills__title" data="img/title-skills.svg" width="99" height="30"></object>
-        <div class="section-skills__wrap">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>SASS</span>
-          <span>LESS</span>
-          <span>Gulp</span>
-          <span>JavaScript</span>
-          <span>BEM</span>
-          <span>Grid</span>
-          <span>Flexbox</span>
-          <span>Github</span>
-          <span>Mobile&nbsp;First</span>
-          <span>Adaptive&nbsp;Design</span>
-          <span>Pixel&nbsp;Perfect</span>
-          <span>Adobe&nbsp;Photoshop</span>
-          <span>Adobe&nbsp;Illustrator</span>
-          <span>Figma</span>
-          <span>Sketch</span>
-        </div>
+        <img class="skills__title" src="img/title-skills.svg" width="99" height="30" />
+        <ul class="skills__list">
+          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>GitHub</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Webpack</li>
+          <li>JSX</li>
+          <li>SASS</li>
+          <li>SCSS</li>
+          <li>LESS</li>
+          <li>Gulp</li>
+          <li>BEM</li>
+          <li>Grid</li>
+          <li>Flexbox</li>
+          <li>Mobile&nbsp;First</li>
+          <li>Adaptive&nbsp;Design</li>
+          <li>Pixel&nbsp;Perfect</li>
+          <li>Figma</li>
+          <li>Adobe&nbsp;Photoshop</li>
+          <li>Sketch</li>
+        </ul>
       </div>
     </section>
-    <section class="section-outer section-certificates" id="certificates">
+
+    <section class="section-outer certificates" id="certificates">
       <div class="section-inner">
         <h2 class="visually-hidden">Certificates</h2>
-        <object class="section-certificates__title" data="img/title-certificates.svg" width="224" height="30"></object>
-        <div class="section-certificates__wrap section-certificates__wrap--nojs">
-          <div class="section-certificates__controls">
-            <div class="previous">
-              <svg width="50" height="50"><use class="controls" xlink:href="#icon-right"></use></svg>
+        <img class="certificates__title" src="img/title-certificates.svg" width="224" height="30" />
+        <div class="certificates__wrap certificates__wrap--nojs">
+          <div class="certificates__controls">
+            <div class="control prev">
+              <svg width="30" height="30"><use class="controls" xlink:href="#icon-right"></use></svg>
             </div>
-            <div class="next">
-              <svg width="50" height="50"><use class="controls" xlink:href="#icon-left"></use></svg>
+            <div class="control next">
+              <svg width="30" height="30"><use class="controls" xlink:href="#icon-left"></use></svg>
             </div>
           </div>
-          <div class="section-certificates__certificate section-certificates__certificate--showing">
-            <a class="section-certificates__link" href="https://htmlacademy.ru/intensive/javascript" target="_blank">
-              <img class="section-certificates__pic" src="img/js-level-1.png" alt="certificate js level-1">
+          <div class="certificates__item certificates__item--showing">
+            <a class="certificates__link" href="https://htmlacademy.ru/intensive/ecmascript" target="_blank">
+              <img class="certificates__pic" src="img/js-level-2.png" alt="certificate js level-2">
             </a>
           </div>
-          <div class="section-certificates__certificate">
-            <a class="section-certificates__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              <img class="section-certificates__pic" src="img/html-css-level-2.png" alt="certificate html css level-2">
+          <div class="certificates__item">
+            <a class="certificates__link" href="https://htmlacademy.ru/intensive/javascript" target="_blank">
+              <img class="certificates__pic" src="img/js-level-1.png" alt="certificate js level-1">
             </a>
           </div>
-          <div class="section-certificates__certificate">
-            <a class="section-certificates__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-              <img class="section-certificates__pic" src="img/html-css-level-1.png" alt="certificate html css level-1">
+          <div class="certificates__item">
+            <a class="certificates__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <img class="certificates__pic" src="img/html-css-level-2.png" alt="certificate html css level-2">
+            </a>
+          </div>
+          <div class="certificates__item">
+            <a class="certificates__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+              <img class="certificates__pic" src="img/html-css-level-1.png" alt="certificate html css level-1">
+            </a>
+          </div>
+          <div class="certificates__item">
+            <a class="certificates__link" href="https://www.udemy.com/course/pro-react-redux/" target="_blank">
+              <img class="certificates__pic" src="img/udemy-react.jpg" alt="certificate udemy react-redux">
             </a>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer>
-    <section class="section-outer section-footer">
+    <section class="section-outer footer">
       <div class="section-inner">
-        <div class="section-footer__social">
-          <a class="section-footer__link section-footer__link--github" href="https://github.com/PrivetAdel" target="_blank">
+        <div class="footer__social">
+          <a class="footer__link footer__link--github" href="https://github.com/PrivetAdel" target="_blank">
             <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-github"></use></svg>
             <span class="visually-hidden">github</span>
           </a>
-          <a class="section-footer__link section-footer__link--mail" href="mailto:rizvanovaadel@gmail.com" target="_blank">
+          <a class="footer__link footer__link--mail" href="mailto:rizvanovaadel@gmail.com" target="_blank">
             <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-mail"></use></svg>
             <span class="visually-hidden">mail</span>
           </a>
-          <a class="section-footer__link section-footer__link--telegram" href="https://tlgg.ru/PrivetAdel" target="_blank">
+          <a class="footer__link footer__link--telegram" href="https://tlgg.ru/PrivetAdel" target="_blank">
             <svg width="30" height="30"><use class="social-icon" xlink:href="#icon-telegram"></use></svg>
             <span class="visually-hidden">telegram</span>
           </a>
         </div>
-        <div class="section-footer__copyright">
+        <div class="footer__copyright">
           <p>© Copyright 2020, Adel Rizvanova</p>
         </div>
       </div>
     </section>
   </footer>
-  <script async="" src="js/menu.js"></script>
-  <script async="" src="js/title-slider.js"></script>
-  <script async="" src="js/certificates-slider.js"></script>
+  
+  <script async src="js/menu.js"></script>
+  <script async src="js/title-slider.js"></script>
+  <script async src="js/certificates-slider.js"></script>
 </body>
 </html>

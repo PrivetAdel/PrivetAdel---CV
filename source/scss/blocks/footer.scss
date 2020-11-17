@@ -1,6 +1,6 @@
-.section-footer {
-  background-color: $color-grey;
-  color: $color-white;
+.footer {
+  background-color: $grey;
+  color: $white;
   width: 100%;
 
   .section-inner {
@@ -16,7 +16,7 @@
   &__link {
     padding: 5px;
     transition: 0.3s;
-    background: $color-white;
+    background: $white;
     border-radius: 50%;
     margin: 10px;
     width: 40px;
@@ -24,7 +24,7 @@
 
     &:hover {
       transform: scale(1.2);
-      background: $color-gradient-pink;
+      background: $gradient-pink;
     }
 
     &:active {
@@ -37,15 +37,5 @@
     font-weight: 300;
     font-size: 14px;
     opacity: .8;
-  }
-
-  @media (max-width: $screen-ld) {
-    &__social {
-      padding: 20px 0 0;
-    }
-
-    &__copyright {
-      padding: 0 0 10px;
-    }
   }
 }

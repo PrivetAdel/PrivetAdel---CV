@@ -1,35 +1,45 @@
-.section-skills {
-  background-color: $color-black;
-  padding: 7% 0 3%;
+.skills {
+  background-color: $black;
+  padding: 30% 0 3%;
   font-weight: 500;
-  font-size: 27px;
-  line-height: 50px;
+  font-size: 22px;
+  line-height: 44px;
 
   &__title {
     margin: 0 0 20px 20px;
   }
 
-  &__wrap {
+  &__list {
     padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 10px;
+    }
   }
 
   span {
     margin: 10px;
     padding: 5px;
-    background-color: $color-black;
+    background-color: $black;
     border-radius: 7px;
   }
 
-  @media (max-width: $screen-sm-max) {
-    font-size: 25px;
-  }
-
-  @media (max-width: $screen-s) {
+  @media (min-width: $screen-s) {
     font-size: 22px;
     line-height: 44px;
   }
 
-  @media (max-width: $screen-xs-max) {
-    padding: 30% 0 3%;
+  @media (min-width: $screen-m) {
+    padding: 7% 0 3%;
+    font-size: 25px;
+  }
+
+  @media (min-width: $screen-l ){
+    font-size: 27px;
+    line-height: 50px;
   }
 }
